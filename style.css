@@ -1,0 +1,47 @@
+body {
+	font-family: 'Roboto Condensed';
+	color: white;
+	background: #000000;
+	position: absolute;
+	bottom: 0;
+}
+
+.post {
+	padding: 10px 0;
+	border-bottom: 2px dotted #ffffff5c;
+	animation: post-appear .3s forwards;
+	word-break: break-word;
+	text-shadow: 0px 2px 0px black, 1px 2px 6px black;
+}
+.post:last-child {
+	border-bottom: none;
+}
+a {
+	color: #1ae2bb;
+}
+blockquote {
+	color: #72d200;
+	margin: 0;
+}
+.revquo {
+	color: #e0727f;
+}
+blockquote + br {
+	display: none;
+}
+mark {
+	background-color: #737373;
+  border-radius: 2px;
+}
+.them {
+	color: #4db0ff;
+    border-radius: 2px;
+}
+@keyframes post-appear {
+	from {
+    transform: translate(calc(-100% - 8px), 0);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
