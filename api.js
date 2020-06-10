@@ -22,6 +22,7 @@ function fetchPosts(after=lastID) {
 			}
 		})
 	})
+	.finally(() => setTimeout(fetchPosts, 2000))
 }
 
 function buildPost(html) {
@@ -30,5 +31,4 @@ function buildPost(html) {
 
 function main() {
 	fetchPosts()
-	setInterval(fetchPosts, 1000)
 }
