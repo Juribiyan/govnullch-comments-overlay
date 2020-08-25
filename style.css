@@ -29,7 +29,7 @@ blockquote {
 blockquote + br {
 	display: none;
 }
-mark {
+mark, .spoiler {
 	background-color: #737373;
   border-radius: 2px;
 }
